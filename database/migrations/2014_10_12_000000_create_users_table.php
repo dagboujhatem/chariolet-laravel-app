@@ -19,10 +19,11 @@ class CreateUsersTable extends Migration
             $table->string('last_name');
             $table->string('cin');
             $table->string('credit_card_number');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('password');
             $table->timestamps();
             $table->softDeletes();
+            $table->unique(['email', 'deleted_at']);
         });
     }
 

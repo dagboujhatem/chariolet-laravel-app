@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="fr">
     <meta charset="UTF-8">
-    <title>InfyOm Generator</title>
+    <title>Chariolet</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
     <!-- Bootstrap 3.3.7 -->
@@ -23,6 +23,10 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+    <!-- favicon tag -->
+    <link rel="icon" type="image/jpg" href="{!! asset('./images/logo.jpg') !!}" />
+    <!-- toaster css -->
+    @toastr_css
 
     @yield('css')
 </head>
@@ -35,7 +39,7 @@
 
             <!-- Logo -->
             <a href="#" class="logo">
-                <b>InfyOm</b>
+                <b>Chariolet</b>
             </a>
 
             <!-- Header Navbar -->
@@ -52,30 +56,32 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="http://infyom.com/images/logo/blue_logo_150x150.jpg"
-                                     class="user-image" alt="User Image"/>
+                                <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-3-512.png"
+                                     class="user-image" alt="User Image" width="150" height="150" />
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                <span class="hidden-xs">{{ Auth::user()->name }}</span>
+                                <span class="hidden-xs">{{ Auth::user()->first_name }}</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src="http://infyom.com/images/logo/blue_logo_150x150.jpg"
-                                         class="img-circle" alt="User Image"/>
+                                    <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-3-512.png"
+                                         class="img-circle" alt="User Image" width="150" height="150"/>
                                     <p>
-                                        {{ Auth::user()->name }}
-                                        <small>Member since {{ Auth::user()->created_at->format('M. Y') }}</small>
+                                        {{ Auth::user()->first_name . ' ' . Auth::user()->last_name}}
+                                        <small>Membre depuis {{ Auth::user()->created_at->format('d-m-y') }}</small>
                                     </p>
                                 </li>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
-                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        <a href="#" class="btn btn-default btn-flat">
+                                            <i class="fa fa-cogs"></i> Paramètres</a>
+                                        </a>
                                     </div>
                                     <div class="pull-right">
                                         <a href="{{ url('/logout') }}" class="btn btn-default btn-flat"
                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                            Sign out
+                                            <i class="fa fa-sign-out"></i> Déconnexion
                                         </a>
                                         <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                                             @csrf
@@ -98,7 +104,8 @@
 
         <!-- Main Footer -->
         <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © 2016 <a href="#">Company</a>.</strong> All rights reserved.
+            <strong>&copy Copyright 2020 - All Rights Reserved | Developped & designed by
+                <a href="#">WAFA</a>.</strong>
         </footer>
 
     </div>
@@ -160,6 +167,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
+    <!-- Sweet alert 2 plugin -->
+    @include('sweetalert::alert')
+    <!-- toastr plugin -->
+    @toastr_js
+    @toastr_render
 
     @stack('scripts')
 </body>
