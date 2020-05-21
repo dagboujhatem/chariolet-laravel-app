@@ -366,7 +366,7 @@ label {
     font-size: 36px;
 }
 
-.login-box input[type="submit"] {
+.login-box input[type="submit"], .login-box button[type="submit"]{
     font-family: 'Montserrat-Bold', serif;
     font-size: 18px;
     color: white !important;

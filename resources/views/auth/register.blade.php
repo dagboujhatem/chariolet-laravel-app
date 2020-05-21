@@ -15,9 +15,9 @@
                         <input type="text" name="first_name" id="first_name" class="form-control"
                                placeholder="Votre nom"  value="{{ old('first_name') }}">
                         @if ($errors->has('first_name'))
-                            <span class="help-block">
+                            <small class="help-block text-danger">
                                 <strong>{{ $errors->first('first_name') }}</strong>
-                            </span>
+                            </small>
                         @endif
                     </div>
                     <div class="form-group has-feedback {{ $errors->has('last_name') ? ' has-error' : '' }}">
@@ -25,9 +25,9 @@
                         <input type="text" name="last_name" id="last_name" class="form-control"
                                placeholder="Votre prénom" value="{{ old('last_name') }}">
                         @if ($errors->has('last_name'))
-                            <span class="help-block">
+                            <small class="help-block text-danger">
                                 <strong>{{ $errors->first('last_name') }}</strong>
-                            </span>
+                            </small>
                         @endif
                     </div>
                     <div class="form-group has-feedback {{ $errors->has('cin') ? ' has-error' : '' }}">
@@ -35,9 +35,9 @@
                         <input type="text" name="cin" id="cin" class="form-control"
                                placeholder="Votre CIN" value="{{ old('cin') }}">
                         @if ($errors->has('cin'))
-                            <span class="help-block">
+                            <small class="help-block text-danger">
                                 <strong>{{ $errors->first('cin') }}</strong>
-                            </span>
+                            </small>
                         @endif
                     </div>
                     <div class="form-group has-feedback {{ $errors->has('credit_card_number') ? ' has-error' : '' }}">
@@ -45,19 +45,19 @@
                         <input type="text" name="credit_card_number" id="credit_card_number" class="form-control"
                                placeholder="Votre numéro de carte bancaire" value="{{ old('credit_card_number') }}">
                         @if ($errors->has('credit_card_number'))
-                            <span class="help-block">
+                            <small class="help-block text-danger">
                                 <strong>{{ $errors->first('credit_card_number') }}</strong>
-                            </span>
+                            </small>
                         @endif
                     </div>
                     <div class="form-group has-feedback {{ $errors->has('email') ? ' has-error' : '' }}">
                         <label for="email" class="text-custom-color">E-mail:</label>
                         <input type="email" name="email" id="email" class="form-control"
-                               placeholder="Votre email" value="{{ old('email') }}">
+                               placeholder="Votre e-mail" value="{{ old('email') }}">
                         @if ($errors->has('email'))
-                            <span class="help-block">
+                            <small class="help-block text-danger">
                                 <strong>{{ $errors->first('email') }}</strong>
-                            </span>
+                            </small>
                         @endif
                     </div>
                     <div class="form-group has-feedback {{ $errors->has('password') ? ' has-error' : '' }}">
@@ -65,9 +65,9 @@
                         <input type="password" name="password" id="password" class="form-control"
                                placeholder="Votre mot de passe">
                         @if ($errors->has('password'))
-                            <span class="help-block">
+                            <small class="help-block text-danger">
                                 <strong>{{ $errors->first('password') }}</strong>
-                            </span>
+                            </small>
                         @endif
                     </div>
                     <div class="form-group">

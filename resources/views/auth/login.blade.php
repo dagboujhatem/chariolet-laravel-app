@@ -13,11 +13,11 @@
                     <div class="form-group has-feedback {{ $errors->has('email') ? ' has-error' : '' }}">
                         <label for="email" class="text-custom-color">E-mail:</label>
                         <input type="email" name="email" id="email" class="form-control"
-                               placeholder="Votre email" value="{{ old('email') }}">
+                               placeholder="Votre e-mail" value="{{ old('email') }}">
                         @if ($errors->has('email'))
-                            <span class="help-block">
+                            <small class="help-block text-danger">
                                 <strong>{{ $errors->first('email') }}</strong>
-                            </span>
+                            </small>
                         @endif
                     </div>
                     <div class="form-group has-feedback {{ $errors->has('password') ? ' has-error' : '' }}">
@@ -25,9 +25,9 @@
                         <input type="password" name="password" id="password" class="form-control"
                                placeholder="Votre mot de passe">
                         @if ($errors->has('password'))
-                            <span class="help-block">
+                            <small class="help-block text-danger">
                                 <strong>{{ $errors->first('password') }}</strong>
-                            </span>
+                            </small>
                         @endif
                     </div>
                     <div class="form-group">

@@ -7,9 +7,9 @@
         <i class="glyphicon glyphicon-edit"></i>
     </a>
     {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', [
-        'type' => 'submit',
-        'class' => 'btn btn-danger btn-sm',
-        'onclick' => "return confirm('Êtes-vous sûr de contunier la suppression?')"
+        'class' => 'btn btn-danger btn-sm  remove-user',
+         'data-id' => $id,
+         'data-action' => route('users.destroy', $id)
     ]) !!}
 </div>
 {!! Form::close() !!}

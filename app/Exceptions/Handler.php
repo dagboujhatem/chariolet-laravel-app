@@ -50,6 +50,11 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
+        if ($exception instanceof \Spatie\Permission\Exceptions\UnauthorizedException) {
+            toastr()->info('Cette notification signifie simplement qu’il y a un réglage de rôle qui vous bloque à accéder à une certaine zone.',
+                'Désolé, vous n\'êtes pas autorisé à accéder à cette page!');
+            return redirect('/home');
+        }
         return parent::render($request, $exception);
     }
 }

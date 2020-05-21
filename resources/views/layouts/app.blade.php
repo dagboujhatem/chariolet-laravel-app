@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
     <!-- favicon tag -->
     <link rel="icon" type="image/jpg" href="{!! asset('./images/logo.jpg') !!}" />
+    <!-- sweet alert -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+    <!-- meta csrf token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- toaster css -->
     @toastr_css
 
@@ -167,8 +171,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
-    <!-- Sweet alert 2 plugin -->
-    @include('sweetalert::alert')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <!-- toastr plugin -->
     @toastr_js
     @toastr_render

@@ -63,11 +63,25 @@ class User extends Authenticatable
     public static $rules = [
         'first_name' => 'required|string|max:255',
         'last_name' => 'required|string|max:255',
-        'cin' => 'required|string|max:255',
+        'cin' => 'required|string|digits:8',
         'credit_card_number' => 'required|string|digits:16',
         'email' => 'required|email|max:255|unique:users,email,NULL,id,deleted_at,NULL',
-        'password' => 'required|string|min:8'
+        'password' => 'required|string|min:8',
+        'role' => 'required|string'
     ];
+
+
+    // Get CIN String
+    public function getCIN()
+    {
+       return '**** *'. substr ($this->cin, -3);
+    }
+
+    // Get credit card number
+    public function getCreditCardNumber()
+    {
+        return '**** **** **** '. substr ($this->credit_card_number, -4);
+    }
 
 
 }

@@ -38,7 +38,8 @@ class CreateUserRequest extends FormRequest
             'cin' => 'CIN',
             'credit_card_number' => 'numéro de votre carte bancaire',
             'email' => 'e-mail',
-            'password' => 'mot de passe'
+            'password' => 'mot de passe',
+            'role' => 'rôle'
         ];
     }
 

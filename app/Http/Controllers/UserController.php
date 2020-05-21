@@ -60,6 +60,10 @@ class UserController extends AppBaseController
 
         $user = $this->userRepository->create($input);
 
+        // assign user role
+        $role = $input['role'];
+        $user->assignRole($role);
+
         toastr()->success('Utilisateur enregistré avec succès.');
 
         return redirect(route('users.index'));
@@ -152,6 +156,9 @@ class UserController extends AppBaseController
 
             return redirect(route('users.index'));
         }
+
+        // remove role
+        $user->removeRole($user->roles->first());
 
         $this->userRepository->delete($id);
 

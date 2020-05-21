@@ -4,8 +4,10 @@
     </a>
 </li>
 
-<li class="{{ Request::is('users*') ? 'active' : '' }}">
-    <a href="{{ route('users.index') }}">
-        <i class="fa fa-users"></i>Gestion des utilisateurs
-    </a>
-</li>
+@role('Administrateur')
+    <li class="{{ Request::is('users*') ? 'active' : '' }}">
+        <a href="{{ route('users.index') }}">
+            <i class="fa fa-users"></i>Gestion des utilisateurs
+        </a>
+    </li>
+@endrole

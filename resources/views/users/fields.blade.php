@@ -25,15 +25,23 @@
 </div>
 
 <!-- Email Field -->
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-4">
     {!! Form::label('email', 'E-mail:') !!}
     {!! Form::text('email', null, ['placeholder' => 'Votre e-mail ici', 'class' => 'form-control']) !!}
 </div>
 
 <!-- Password Field -->
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-4">
     {!! Form::label('password', 'Mot de passe:') !!}
     {!! Form::password('password', ['placeholder' => 'Votre mot de passe ici', 'class' => 'form-control']) !!}
+</div>
+
+<!-- Password Field -->
+<div class="form-group col-sm-4">
+    {!! Form::label('role', 'Rôle:') !!}
+    {!! Form::select('role',
+     ['Administrateur' => 'Administrateur' , 'User' => 'User'], null,
+     ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

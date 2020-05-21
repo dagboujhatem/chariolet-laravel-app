@@ -52,7 +52,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
-            'cin' => ['required', 'string', 'max:255'],
+            'cin' => ['required', 'string', 'digits:8'],
             'credit_card_number' => ['required', 'string', 'digits:16'],
             'email' => ['required', 'string', 'email', 'max:255',
                 'unique:users,email,NULL,id,deleted_at,NULL'],
@@ -75,6 +75,6 @@ class RegisterController extends Controller
             'credit_card_number' => $data['credit_card_number'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-        ]);
+        ])->assignRole('User');
     }
 }
