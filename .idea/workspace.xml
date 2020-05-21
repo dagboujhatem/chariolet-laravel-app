@@ -1,105 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8601f879-2412-4bc7-a6e4-167fd6e6c03f" name="Default Changelist" comment="added user &amp; role seeder">
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/DataTables/UserDataTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CreateUserRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateUserRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/datatables-buttons.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/datatables.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/snappy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/sweetalert.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/toastr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Montserrat-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Montserrat-Bold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Montserrat-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Montserrat-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Montserrat-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Montserrat-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Montserrat-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Montserrat-Regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Montserrat-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Montserrat-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Montserrat-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/SegoeUI-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/SegoeUI-Regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/SegoeUI-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/SegoeUI-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/SegoeUI-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/carousel-image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/clock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/image 1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/image 2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/image 3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/lamp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-3.2.1.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/datatables/buttons.server-side.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/sweetalert/sweetalert.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fr/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fr/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fr/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/fr/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/model_schemas/User.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/common.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/users/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/users/datatables_actions.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/users/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/users/fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/users/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/users/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/users/show_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/users/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/datatables/print.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/sweetalert/alert.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/chariolet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chariolet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="8601f879-2412-4bc7-a6e4-167fd6e6c03f" name="Default Changelist" comment="added template and user managments system">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/datatables_js.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/datatables_js.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/infyom/laravel_generator.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/infyom/laravel_generator.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -286,6 +190,7 @@
       <workItem from="1589869360108" duration="1390000" />
       <workItem from="1589870772564" duration="23468000" />
       <workItem from="1589934140559" duration="618000" />
+      <workItem from="1590018933308" duration="1251000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1589340146668</created>

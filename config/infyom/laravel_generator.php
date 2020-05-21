@@ -75,6 +75,8 @@ return [
     'options' => [
         'softDelete' => true,
         'tables_searchable_default' => false,
+        'repository_pattern' => true,
+        'localized' => false,
     ],
     /*
     |--------------------------------------------------------------------------
