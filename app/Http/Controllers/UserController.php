@@ -105,6 +105,8 @@ class UserController extends AppBaseController
 
             return redirect(route('users.index'));
         }
+        // add role field
+        $user['role'] = $user->getRoleNames()->first();
 
         return view('users.edit')->with('user', $user);
     }
