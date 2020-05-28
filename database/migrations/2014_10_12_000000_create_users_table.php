@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('credit_card_number');
             $table->string('email');
             $table->string('password');
+            $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();
             $table->unique(['email', 'deleted_at']);

@@ -27,7 +27,7 @@
                         </div>
                        <div class="row">
                            <div class="form-group col-md-12">
-                               <button type="submit" class="btn btn-primary pull-right">
+                               <button type="submit" class="btn btn-primary btn-block">
                                    <i class="fa fa-btn fa-envelope"></i> Envoyer le lien de réinitialisation du mot de passe
                                </button>
                            </div>

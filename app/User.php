@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Notifications\PasswordResetRequest;
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -81,6 +82,17 @@ class User extends Authenticatable
     public function getCreditCardNumber()
     {
         return '**** **** **** '. substr ($this->credit_card_number, -4);
+    }
+
+    /**
+     * Send the password reset notification.
+     *
+     * @param  string  $token
+     * @return void
+     */
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new PasswordResetRequest($token));
     }
 
 
