@@ -26,9 +26,9 @@ class UserDataTable extends DataTable
             return $user->getCIN();
         });
         // edit credit card number column
-        $dataTable->editColumn('credit_card_number', function(User $user) {
-            return $user->getCreditCardNumber();
-        });
+//        $dataTable->editColumn('credit_card_number', function(User $user) {
+//            return $user->getCreditCardNumber();
+//        });
 
         return $dataTable->addColumn('action', 'users.datatables_actions');
     }
@@ -87,10 +87,10 @@ class UserDataTable extends DataTable
                 'title' => 'Nom'],
             ['data' => 'last_name', 'name'=> 'last_name',
                 'title' => 'Prénom'],
-            ['data' => 'cin', 'name'=> 'cin',
-                'title' => 'CIN', 'searchable' => false],
-            ['data' => 'credit_card_number', 'name'=> 'credit_card_number',
-                'title' => 'Carte bancaire', 'searchable' => false],
+            ['data' => 'cin', 'name'=> 'cin', 'title' => 'CIN',
+                'searchable' => false, 'orderable' => false, 'printable' => true],
+//            ['data' => 'credit_card_number', 'name'=> 'credit_card_number',
+//                'title' => 'Carte bancaire', 'searchable' => false],
             ['data' => 'email', 'name'=> 'email',
                 'title' => 'E-mail'],
             ['data' => 'role', 'name'=> 'role', 'title' => 'Rôle',
