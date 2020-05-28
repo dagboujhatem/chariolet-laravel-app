@@ -120,7 +120,7 @@ h2 {
 /* HOME SECTION */
 
 .carousel-caption {
-    top: 120px;
+    top: 100px;
     bottom: auto;
 }
 
@@ -138,10 +138,8 @@ h2 {
     font-family: 'SegoeUI-Regular', serif;
     font-size: 20px;
     height: 49px;
-    /*width: 216px !important;*/
-    /*width: 216px !important;*/
-    /*margin-top: 120px;*/
-    /*vertical-align: middle*/
+    width: 216px !important;
+    margin-top: 100px !important;
 }
 
 
@@ -262,9 +260,6 @@ footer a:hover {
 	.logo {
 	  width: 192px !important;
 	}
-	.carousel-caption {
-	    top: 0;
-	}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1076px) {
@@ -287,42 +282,73 @@ footer a:hover {
 }
 /* home */
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-	.carousel-caption {
-	    top: 100px;
-	}
-
+@media screen and (min-width: 992px) and (max-width: 1062px) {
+    .carousel-caption h1 {
+        font-size: 50px;
+    }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
-	.carousel-caption {
-	    top: 50px;
-	}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .carousel-caption {
+        top: 50px;
+    }
+    .carousel-caption h1 {
+        font-size: 40px;
+    }
+    .carousel-caption span.site-name {
+        font-size: 40px;
+    }
+    .btn-profiter {
+        margin-top: 50px !important;
+    }
+}
 
-	.carousel-caption h1 {
-	   font-size: 2rem;
-	}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .carousel-caption {
+        top: 40px;
+    }
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+    .carousel-caption span.site-name {
+        font-size: 30px;
+    }
+    .btn-profiter {
+        margin-top: 40px !important;
+    }
 }
 
 @media screen and (min-width: 384px) and (max-width: 575px) {
-	.carousel-caption {
-	    top: 20px;
-	}
-
-	.carousel-caption h1 {
-	   font-size: 1.5rem;
-	}
+    .carousel-caption {
+        top: 10px;
+    }
+    .carousel-caption h1 {
+        font-size: 20px;
+    }
+    .carousel-caption span.site-name {
+        font-size: 20px;
+    }
+    .btn-profiter {
+        margin-top: 10px !important;
+    }
 }
 
 @media screen and (max-width: 383px) {
-	.carousel-caption {
-	    top: 10px;
-	}
-
-	.carousel-caption h1 {
-	   font-size: 1rem;
-	}
-
+    .carousel-caption {
+        top: 10px;
+    }
+    .carousel-caption h1 {
+        font-size: 15px;
+    }
+    .carousel-caption span.site-name {
+        font-size: 15px;
+    }
+    .btn-profiter {
+        font-size: 15px;
+        height: 39px;
+        width: 150px !important;
+        margin-top: 10px !important;
+    }
 }
 
 /* abaut */

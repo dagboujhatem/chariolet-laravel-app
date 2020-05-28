@@ -9,7 +9,7 @@
                 <div class="carousel-caption d-md-block">
                     <h1>Achetez vos produits avec</h1>
                     <span class="site-name">le chariot intelligent</span>
-                    <div class="offset-md-4 col-md-2">
+                    <div class="offset-md-4 col-md-4 text-center">
                         <a class="btn btn-light btn-profiter btn-sm-lg" href="#home">Profiter</a>
                     </div>
                 </div>
