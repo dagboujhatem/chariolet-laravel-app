@@ -42,11 +42,4 @@ class CreateUserRequest extends FormRequest
             'role' => 'rôle'
         ];
     }
-
-    protected function formatErrors(Validator $validator)
-    {
-        toastr()->error('Your Error Message');
-
-        return $validator->errors()->all();
-    }
 }

@@ -122,20 +122,31 @@ class UserController extends AppBaseController
     public function update($id, UpdateUserRequest $request)
     {
         $user = $this->userRepository->find($id);
-        dd($user);
 
         if (empty($user)) {
             toastr()->error('Utilisateur non trouvé.');
 
             return redirect(route('users.index'));
         }
-
+        // input
+        $input = $request->all();
         // crypt the password if exist
-//        if ($request->password){
-//            $request->password = Hash::make($request->input('password'));
-//        }
+        if ($request->password){
+            $input['password'] = Hash::make($request->input('password'));
+        } else {
+            $input['password'] = $user->password;
+        }
+        $user = $this->userRepository->update($input, $id);
 
-        $user = $this->userRepository->update($request->all(), $id);
+        // re-assign role if is changed in dashboard
+        if($request->role !== $user->getRoleNames()->first())
+        {
+            // delete old role
+            $user->removeRole($user->roles->first());
+            // assign new role
+            $role = $input['role'];
+            $user->assignRole($role);
+        }
 
         toastr()->success('Utilisateur mis à jour avec succès.');
 

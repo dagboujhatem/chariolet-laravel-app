@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8601f879-2412-4bc7-a6e4-167fd6e6c03f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/delete_confirmation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/datatables_js.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/datatables_js.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/datatables_actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/datatables_actions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CreateUserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreateUserRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UpdateUserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateUserRequest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +204,7 @@
       <workItem from="1590018933308" duration="13020000" />
       <workItem from="1590043479245" duration="9997000" />
       <workItem from="1590574267416" duration="76000" />
-      <workItem from="1590670324635" duration="16047000" />
+      <workItem from="1590670324635" duration="18323000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1589340146668</created>
@@ -242,7 +241,28 @@
       <option name="project" value="LOCAL" />
       <updated>1590677700975</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix sweet alert 2 in btn delete user">
+      <created>1590687664222</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590687664222</updated>
+    </task>
+    <task id="LOCAL-00007" summary="datatable show/seachables columns">
+      <created>1590688333017</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590688333017</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update user: load the user role">
+      <created>1590688364698</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590688364698</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +289,9 @@
     <MESSAGE value="change option generation infyom" />
     <MESSAGE value="added reset password process" />
     <MESSAGE value="fix navbar &amp; footer links" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix navbar &amp; footer links" />
+    <MESSAGE value="fix sweet alert 2 in btn delete user" />
+    <MESSAGE value="datatable show/seachables columns" />
+    <MESSAGE value="update user: load the user role" />
+    <option name="LAST_COMMIT_MESSAGE" value="update user: load the user role" />
   </component>
 </project>

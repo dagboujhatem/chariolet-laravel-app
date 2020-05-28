@@ -26,9 +26,8 @@ class UpdateUserRequest extends FormRequest
     public function rules()
     {
         $rules = User::$rules;
-        $rules['email'] = 'required|unique:users,email,' .$this->route("user"). ',id,deleted_at,NULL';
+        $rules['email'] = 'required||email|max:255';
         $rules['password'] = '';
-        dd($rules);
         return $rules;
     }
 
