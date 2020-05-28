@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8601f879-2412-4bc7-a6e4-167fd6e6c03f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/delete_confirmation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/datatables_js.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/datatables_js.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/datatables_actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/datatables_actions.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +19,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -198,7 +205,7 @@
       <workItem from="1590018933308" duration="13020000" />
       <workItem from="1590043479245" duration="9997000" />
       <workItem from="1590574267416" duration="76000" />
-      <workItem from="1590670324635" duration="6360000" />
+      <workItem from="1590670324635" duration="16047000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1589340146668</created>
@@ -228,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590677102046</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix navbar &amp; footer links">
+      <created>1590677700975</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590677700975</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +268,7 @@
     <MESSAGE value="added user &amp; role seeder" />
     <MESSAGE value="change option generation infyom" />
     <MESSAGE value="added reset password process" />
-    <option name="LAST_COMMIT_MESSAGE" value="added reset password process" />
+    <MESSAGE value="fix navbar &amp; footer links" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix navbar &amp; footer links" />
   </component>
 </project>

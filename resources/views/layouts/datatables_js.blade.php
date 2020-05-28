@@ -51,32 +51,5 @@
 </script>
 <!-- End data table General -->
 
-
-<!-- S-->
-<script type="text/javascript">
-    $("body").on("click",".remove-user",function(){
-        var current_object = $(this);
-        swal({
-            title: "Êtes-vous sûr?",
-            text: "Voulez-vous vraiment supprimer cette enregistrement?",
-            type: "warning",
-            showCancelButton: true,
-            cancelButtonClass: '#DD6B55',
-            confirmButtonColor: '#dc3545',
-            confirmButtonText: 'Oui, supprimez-le',
-            cancelButtonText: 'Non, annuler'
-        },function (result) {
-            if (result) {
-                var action = current_object.attr('data-action');
-                var token = jQuery('meta[name="csrf-token"]').attr('content');
-                var id = current_object.attr('data-id');
-
-                $('body').html("<form class='form-inline remove-form' method='post' action='"+action+"'></form>");
-                $('body').find('.remove-form').append('<input name="_method" type="hidden" value="delete">');
-                $('body').find('.remove-form').append('<input name="_token" type="hidden" value="'+token+'">');
-                $('body').find('.remove-form').append('<input name="id" type="hidden" value="'+id+'">');
-                $('body').find('.remove-form').submit();
-            }
-        });
-    });
-</script>
+<!-- Sweet alert 2 delete confirmation -->
+<script type="text/javascript" src="{!! asset('js/delete_confirmation.js') !!}"></script>

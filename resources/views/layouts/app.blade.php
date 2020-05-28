@@ -26,7 +26,7 @@
     <!-- favicon tag -->
     <link rel="icon" type="image/jpg" href="{!! asset('./images/logo.jpg') !!}" />
     <!-- sweet alert -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.13.2/dist/sweetalert2.css">
     <!-- meta csrf token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- toaster css -->
@@ -171,7 +171,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <!-- sweet alert 2 -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <!-- end sweet alert 2 -->
     <!-- toastr plugin -->
     @toastr_js
     @toastr_render
