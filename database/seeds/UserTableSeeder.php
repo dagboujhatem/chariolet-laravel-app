@@ -22,6 +22,7 @@ class UserTableSeeder extends Seeder
                 'credit_card_number' => '4485480221084675' ,
                 'email' => 'admin@gmail.com' ,
                 'password' => bcrypt('password'),
+                'approved_at' => now(),
             ])->assignRole('Administrateur');
 
 
@@ -33,6 +34,7 @@ class UserTableSeeder extends Seeder
                 'credit_card_number' => '4485480221084078' ,
                 'email' => 'user@gmail.com' ,
                 'password' => bcrypt('password'),
+                'approved_at' => now(),
             ])->assignRole('User');
 
             // create a random users

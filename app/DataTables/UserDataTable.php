@@ -30,7 +30,15 @@ class UserDataTable extends DataTable
 //            return $user->getCreditCardNumber();
 //        });
 
-        return $dataTable->addColumn('action', 'users.datatables_actions');
+        // edit approved_at column
+        $dataTable->editColumn('approved_at', function(User $user) {
+            return view('users.approve', ['user'=>$user]);
+        });
+
+        // add action column
+        $dataTable->addColumn('action', 'users.datatables_actions');
+
+        return $dataTable;
     }
 
     /**
@@ -54,8 +62,7 @@ class UserDataTable extends DataTable
         return $this->builder()
             ->columns($this->getColumns())
             ->minifiedAjax()
-            ->addAction(['title' => 'Actions',
-                'width' => '120px', 'printable' => false, 'class' => 'text-center'])
+            ->addAction(['title' => 'Actions', 'printable' => false, 'class' => 'text-center'])
             ->parameters([
                 'dom'       => 'Bfrtip',
                 'stateSave' => true,
@@ -97,6 +104,8 @@ class UserDataTable extends DataTable
                 'searchable' => false, 'orderable' => false, 'printable' => true],
 //          ['data' => 'password', 'name'=> 'password',
 //                'title' => 'Mot de passe'],
+            ['data' => 'approved_at', 'name'=> 'approved_at', 'title' => 'Approuver',
+                'searchable' => true, 'orderable' => true, 'printable' => true],
         ];
     }
 

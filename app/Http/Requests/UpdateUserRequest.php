@@ -25,10 +25,15 @@ class UpdateUserRequest extends FormRequest
      */
     public function rules()
     {
-        $rules = User::$rules;
-        $rules['email'] = 'required||email|max:255';
-        $rules['password'] = '';
-        return $rules;
+        return [
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'cin' => 'required|string|digits:8',
+            'credit_card_number' => 'required|string|digits:16',
+            'email' => 'required|email|max:255',
+            'password' => '',
+            'role' => 'required|string'
+        ];
     }
 
     public function attributes()

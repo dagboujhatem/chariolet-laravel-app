@@ -38,7 +38,8 @@ class User extends Authenticatable
         'cin',
         'credit_card_number',
         'email',
-        'password'
+        'password',
+        'approved_at',
     ];
 
     /**
@@ -55,22 +56,6 @@ class User extends Authenticatable
         'email' => 'string',
         'password' => 'string'
     ];
-
-    /**
-     * Validation rules
-     *
-     * @var array
-     */
-    public static $rules = [
-        'first_name' => 'required|string|max:255',
-        'last_name' => 'required|string|max:255',
-        'cin' => 'required|string|digits:8',
-        'credit_card_number' => 'required|string|digits:16',
-        'email' => 'required|email|max:255|unique:users,email,NULL,id,deleted_at,NULL',
-        'password' => 'required|string|min:8',
-        'role' => 'required|string'
-    ];
-
 
     // Get CIN String
     public function getCIN()

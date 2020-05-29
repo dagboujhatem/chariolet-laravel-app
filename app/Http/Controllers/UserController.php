@@ -57,6 +57,8 @@ class UserController extends AppBaseController
 
         // crypt the password
         $input['password'] = Hash::make($input['password']);
+        // validate account by default (if is added by Administrateur)
+        $input['approved_at'] = now();
 
         $user = $this->userRepository->create($input);
 
@@ -178,5 +180,21 @@ class UserController extends AppBaseController
         toastr()->success('Utilisateur supprimé avec succès.');
 
         return redirect(route('users.index'));
+    }
+
+    // Approve user by user_id
+    public function approve($user_id)
+    {
+        $user = $this->userRepository->find($user_id);
+
+        if (empty($user)) {
+            toastr()->error('Utilisateur non trouvé.');
+
+            return redirect(route('users.index'));
+        }
+
+        $user = $this->userRepository->update(['approved_at' => now()], $user_id);
+        toastr()->success('Utilisateur approuvé avec succès.');
+        return redirect()->route('users.index');
     }
 }

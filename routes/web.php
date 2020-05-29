@@ -17,11 +17,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/approval', function () {
+    return view('approval');
+})->name('approval');
+
 Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')
-    ->middleware('verified')
-    ->name('home');
+Route::middleware(['approved'])->group(function () {
 
-Route::resource('users', 'UserController')
-    ->middleware('role:Administrateur');
+    Route::get('/home', 'HomeController@index')
+        ->middleware('verified')
+        ->name('home');
+
+    Route::resource('users', 'UserController')
+        ->middleware('role:Administrateur');
+
+    Route::resource('settings', 'SettingsController', ['only' => ['edit', 'update']])
+        ->middleware('auth');
+
+    Route::get('/users/{user_id}/approve', 'UserController@approve')
+        ->middleware('role:Administrateur')
+        ->name('users.approve');
+});
+

@@ -2,14 +2,10 @@
 
 namespace App\Http\Requests;
 
-
-use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
-use App\User;
 
-class CreateUserRequest extends FormRequest
+class SettingsUserRequest extends FormRequest
 {
-
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -32,9 +28,9 @@ class CreateUserRequest extends FormRequest
             'last_name' => 'required|string|max:255',
             'cin' => 'required|string|digits:8',
             'credit_card_number' => 'required|string|digits:16',
-            'email' => 'required|email|max:255|unique:users,email,NULL,id,deleted_at,NULL',
-            'password' => 'required|string|min:8',
-            'role' => 'required|string'
+            'email' => 'required|email|max:255',
+            'password' => '',
+            'role' => ''
         ];
     }
 
@@ -46,8 +42,7 @@ class CreateUserRequest extends FormRequest
             'cin' => 'CIN',
             'credit_card_number' => 'numéro de votre carte bancaire',
             'email' => 'e-mail',
-            'password' => 'mot de passe',
-            'role' => 'rôle'
+            'password' => 'mot de passe'
         ];
     }
 }
