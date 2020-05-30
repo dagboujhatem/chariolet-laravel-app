@@ -430,3 +430,24 @@ label {
 ::-webkit-scrollbar-thumb {
     background: #e91451;
 }
+
+
+/* approval page design */
+
+.bg-approval {
+    background-color: #e91451 !important;
+}
+
+.approval-card {
+    border: 1px solid #9C9C9C;
+    border-radius: 0 !important;
+}
+
+.approval-card h5 {
+    font-family: 'Montserrat-Regular', serif;
+}
+
+.approval-card .card-body {
+    font-family: 'Montserrat-Regular', serif;
+    font-size: 14px;
+}

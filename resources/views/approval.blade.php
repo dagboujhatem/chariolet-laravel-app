@@ -15,8 +15,10 @@
         <div class="row m-0 justify-content-center align-items-center">
             <div class="col-md-6">
                 <div class="col-md-12 login-box">
-                <div class="card">
-                    <div class="card-header text-white bg-info">Compte en attente d'acceptation</div>
+                <div class="card approval-card">
+                    <div class="card-header text-white bg-approval">
+                        <h5>Compte en attente d'acceptation</h5>
+                    </div>
                     <div class="card-body">
                         Votre compte attend l'acceptation de notre administrateur. Veuillez vérifier ultérieurement.
                         <br><br>
