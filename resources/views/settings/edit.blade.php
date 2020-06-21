@@ -1,5 +1,14 @@
 @extends('layouts.app')
 
+@section('css')
+    <style>
+        .btn-historique {
+            background: #e91451 !important;
+            margin-right: 10px;
+        }
+    </style>
+@endsection
+
 @section('content')
     <section class="content-header">
         <h1>
@@ -63,6 +72,9 @@
                        <div class="form-group col-sm-12">
                            <button type="submit" class="btn btn-success pull-right">
                                <i class="fa fa-save"></i> Enregistrer
+                           </button>
+                           <button type="button" class="btn btn-primary btn-historique pull-right">
+                               <i class="fa fa-history"></i> Historique d'achat
                            </button>
                        </div>
 

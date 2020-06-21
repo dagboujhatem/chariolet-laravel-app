@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8601f879-2412-4bc7-a6e4-167fd6e6c03f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/approval.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/approval.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/settings/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/settings/edit.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +205,10 @@
       <workItem from="1590574267416" duration="76000" />
       <workItem from="1590670324635" duration="28129000" />
       <workItem from="1590739768718" duration="11144000" />
-      <workItem from="1590830943626" duration="1395000" />
+      <workItem from="1590830943626" duration="1454000" />
+      <workItem from="1592157252998" duration="601000" />
+      <workItem from="1592239852137" duration="55000" />
+      <workItem from="1592774571832" duration="1249000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1589340146668</created>
@@ -285,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590767393204</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="approval-card refactor design">
+      <created>1590832371487</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1590832371487</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +327,7 @@
     <MESSAGE value="update user: fix validation &amp; update role if is changed &amp; update password if exist" />
     <MESSAGE value="fix home section (responsive design)" />
     <MESSAGE value="fix: approve &amp; settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: approve &amp; settings" />
+    <MESSAGE value="approval-card refactor design" />
+    <option name="LAST_COMMIT_MESSAGE" value="approval-card refactor design" />
   </component>
 </project>
