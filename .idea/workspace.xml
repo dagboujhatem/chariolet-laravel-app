@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8601f879-2412-4bc7-a6e4-167fd6e6c03f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/settings/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/settings/edit.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,7 +207,8 @@
       <workItem from="1590830943626" duration="1454000" />
       <workItem from="1592157252998" duration="601000" />
       <workItem from="1592239852137" duration="55000" />
-      <workItem from="1592774571832" duration="1249000" />
+      <workItem from="1592774571832" duration="1896000" />
+      <workItem from="1592780230190" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1589340146668</created>
@@ -294,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590832371487</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add historique d'achat">
+      <created>1592775850197</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592775850197</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +335,7 @@
     <MESSAGE value="fix home section (responsive design)" />
     <MESSAGE value="fix: approve &amp; settings" />
     <MESSAGE value="approval-card refactor design" />
-    <option name="LAST_COMMIT_MESSAGE" value="approval-card refactor design" />
+    <MESSAGE value="add historique d'achat" />
+    <option name="LAST_COMMIT_MESSAGE" value="add historique d'achat" />
   </component>
 </project>
